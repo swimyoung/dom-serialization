@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/swimyoung/dom-serialize/branch/master/graph/badge.svg)](https://codecov.io/gh/swimyoung/dom-serialize)
+
 # DOM Serialize
 
 Serialize the DOM

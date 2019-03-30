@@ -7,6 +7,11 @@
     "dom",
     "serialization"
   ],
+  "author": "Youngjin Jang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swimyoung/dom-serialize"
+  },
   "license": "MIT",
   "scripts": {
     "test": "jest",

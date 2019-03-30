@@ -1,11 +1,11 @@
 module.exports = {
   entry: {
-    'dist/domSerialize': `${__dirname}/src/index.js`,
+    'dist/domSerialization': `${__dirname}/src/index.js`,
   },
   output: {
     path: __dirname,
     filename: `[name].js`,
-    library: 'domSerialize',
+    library: 'domSerialization',
     libraryTarget: 'umd',
   },
   mode: 'production',

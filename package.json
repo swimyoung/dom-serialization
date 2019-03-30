@@ -1,5 +1,5 @@
 {
-  "name": "dom-serialize",
+  "name": "dom-serialization",
   "version": "1.0.0",
   "description": "Serialize the DOM",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
   "author": "Youngjin Jang",
   "repository": {
     "type": "git",
-    "url": "https://github.com/swimyoung/dom-serialize"
+    "url": "https://github.com/swimyoung/dom-serialization"
   },
   "license": "MIT",
   "scripts": {

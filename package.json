@@ -1,0 +1,68 @@
+{
+  "name": "dom-serialization",
+  "version": "1.0.0",
+  "description": "Serialize the DOM",
+  "main": "dist/index.js",
+  "keywords": [
+    "dom",
+    "serialization"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "report": "codecov",
+    "lint": "eslint .",
+    "compile": "babel src -d dist --ignore **/*.spec.js",
+    "bundle": "webpack -p",
+    "dist": "rimraf dist && run-p compile bundle"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-plugin-transform-remove-debugger": "^6.9.4",
+    "babel-plugin-lodash": "^3.3.4",
+    "codecov": "^3.2.0",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.5.0",
+    "jest-in-case": "^1.0.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "clean-webpack-plugin": "^2.0.1",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.2",
+    "lodash": "^4.17.11"
+  },
+  "sideEffects": false,
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 80,
+    "trailingComma": "all"
+  },
+  "jest": {
+    "testURL": "http://localhost",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
+  }
+}

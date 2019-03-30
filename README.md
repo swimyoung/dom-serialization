@@ -1,4 +1,4 @@
-# DOM Serialization
+# DOM Serialize
 
 Serialize the DOM
 
@@ -12,18 +12,18 @@ Q. Why don't you use innerHTML?
   text node       text node
 ```
 
-dom-serialization serialize the DOM with keeping tree structure. So you can keep tree structure when you deserialize from serialized string.
+dom-serialize serialize the DOM with keeping tree structure. So you can keep tree structure when you deserialize from serialized string.
 
 ## Getting started
 
 ```sh
-npm install dom-serialization
+npm install dom-serialize
 ```
 
 ### ES Module
 
 ```js
-import { serialize, deserialize } from 'dom-serialization';
+import { serialize, deserialize } from 'dom-serialize';
 
 const dom = document.createElement('div');
 dom.appendChild(document.createTextNode('hello'));
@@ -36,7 +36,7 @@ console.log(deserialize(code));
 ### UMD
 
 ```html
-<script src="node_modules/dom-serialization/dist/domSerialize.js"></script>
+<script src="node_modules/dom-serialize/dist/domSerialize.js"></script>
 <script>
   var dom = document.createElement('div');
   dom.appendChild(document.createTextNode('hello'));

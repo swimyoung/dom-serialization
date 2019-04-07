@@ -16,6 +16,10 @@ Q. Why don't you use innerHTML?
 
 dom-serialization serialize the DOM with keeping tree structure. So you can keep tree structure when you deserialize from serialized string.
 
+## Demo
+
+https://swimyoung.github.io/dom-serialization/
+
 ## Getting started
 
 ```sh

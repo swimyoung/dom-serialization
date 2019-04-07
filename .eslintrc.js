@@ -37,7 +37,7 @@ module.exports = {
       },
     },
     {
-      files: ['**/src/**/*.js'],
+      files: ['**/src/**/*.js', '**/docs/**/*.js'],
       env: {
         browser: true,
         node: false,

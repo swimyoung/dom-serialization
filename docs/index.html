@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM Serialization</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <h1>DOM Serialization</h1>
+      </header>
+
+      <section id="body">
+        <article>
+          <p>Serialize the DOM</p>
+          <div class="btn-group">
+            <button data-action="serialize" type="button">Serialize</button><button data-action="deserialize" type="button">Deserialize</button>
+          </div>
+          <p>
+            detail at
+            <a href="https://github.com/swimyoung/dom-serialization">
+              README.md
+            </a>
+          </p>
+          <div class="content" contenteditable="true">
+            Paste any contents in here
+          </div>
+        </article>
+      </section>
+
+      <footer id="footer">
+        Copyright © 2019 Youngjin Jang.
+      </footer>
+    </main>
+    <script src="domSerialization.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

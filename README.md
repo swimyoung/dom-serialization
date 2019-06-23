@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/swimyoung/dom-serialization/branch/master/graph/badge.svg)](https://codecov.io/gh/swimyoung/dom-serialization)
+[![codecov](https://codecov.io/gh/swimyoung/dom-serialization/branch/master/graph/badge.svg)](https://codecov.io/gh/swimyoung/dom-serialization) [![Build Status](https://travis-ci.org/swimyoung/dom-serialization.svg?branch=master)](https://travis-ci.org/swimyoung/dom-serialization)
 
 # DOM Serialization
 

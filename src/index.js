@@ -81,7 +81,7 @@ const createNodeFromDecodedData = decodedData => {
 const createElementFromDecodedData = decodedData => {
   const { attribute, tagName } = decodedData;
   const element = document.createElement(tagName);
-  
+
   for (let [name, value] of Object.entries(attribute)) {
     element.setAttribute(name, value);
   }

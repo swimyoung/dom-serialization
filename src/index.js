@@ -1,14 +1,10 @@
-import _ from 'lodash';
-
 const { ELEMENT_NODE, TEXT_NODE, COMMENT_NODE } = Node;
 const DEPTH = '/';
 const PART = '&';
 const NODE = ',';
 
 const isNode = arg =>
-  _.isObjectLike(arg) &&
-  _.isPlainObject(arg) === false &&
-  typeof arg.nodeType !== 'undefined';
+  typeof arg === 'object' && typeof arg.nodeType !== 'undefined';
 
 const isElementNode = arg => isNode(arg) && arg.nodeType === ELEMENT_NODE;
 

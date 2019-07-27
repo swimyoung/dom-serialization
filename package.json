@@ -1,6 +1,6 @@
 {
   "name": "dom-serialization",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Serialize the DOM",
   "main": "dist/index.js",
   "keywords": [

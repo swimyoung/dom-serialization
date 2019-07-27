@@ -26,8 +26,6 @@ https://swimyoung.github.io/dom-serialization/
 npm install dom-serialization
 ```
 
-### ES Module
-
 ```js
 import { serialize, deserialize } from 'dom-serialization';
 
@@ -37,18 +35,4 @@ dom.appendChild(document.createTextNode('world'));
 
 const code = serialize(dom);
 console.log(deserialize(code));
-```
-
-### UMD
-
-```html
-<script src="node_modules/dom-serialization/dist/domSerialization.js"></script>
-<script>
-  var dom = document.createElement('div');
-  dom.appendChild(document.createTextNode('hello'));
-  dom.appendChild(document.createTextNode('world'));
-
-  var code = domSerialization.serialize(dom);
-  console.log(domSerialization.deserialize(code));
-</script>
 ```

@@ -1,8 +1,8 @@
 import { serialize, deserialize } from './index';
 import cases from 'jest-in-case';
 
-const removeTagSpaceInHTML = s =>
-  s
+const removeTagSpaceInHTML = (str: string): string =>
+  str
     .replace(/>[\s]+</g, '><')
     .replace(/>[\s]+/g, '>')
     .replace(/[\s]+</g, '<');

@@ -10,7 +10,7 @@ interface NodeInterface {
 
 interface ElementInterface extends NodeInterface {
   tagName: string;
-  attributes: object;
+  attributes: Record<string, string | number>;
 }
 
 interface TextInterface extends NodeInterface {
@@ -72,7 +72,11 @@ function extractDataFromComment({
 
 function extractDataFromNode(
   node: Node,
-): NodeInterface | ElementInterface | CommentInterface | object {
+):
+  | NodeInterface
+  | ElementInterface
+  | CommentInterface
+  | Record<string, string | number> {
   if (isElementNode(node)) {
     return extractDataFromElement(node as Element);
   }
@@ -93,7 +97,7 @@ function createElementFromDecodedData(decodedData: ElementInterface): Element {
   const element = document.createElement(tagName);
 
   for (const [name, value] of Object.entries(attributes)) {
-    element.setAttribute(name, value);
+    element.setAttribute(name, value as string);
   }
 
   return element;
@@ -169,7 +173,7 @@ function serialize(root: Node): string {
 function deserialize(code: string): Node {
   const map: { [key: string]: Node } = {};
 
-  code.split(NODE).forEach(parts => {
+  code.split(NODE).forEach((parts) => {
     const [depth, nth, encodedData] = parts.split(PART);
     const decodedData = JSON.parse(decodeData(encodedData));
     const node = createNodeFromDecodedData(decodedData);

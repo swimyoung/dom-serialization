@@ -20,6 +20,7 @@ describe('serialize and deserialize', () => {
     ({ html }) => {
       const dom = document.createElement('div');
       dom.innerHTML = html;
+      /* eslint-disable-next-line */
       expect(deserialize(serialize(dom))).toEqual(dom);
     },
     [
